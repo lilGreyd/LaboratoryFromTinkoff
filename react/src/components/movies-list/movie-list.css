@@ -1,0 +1,85 @@
+.movies-list {
+  margin-left: 9px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border-right: 1px solid rgba(217, 217, 217, 0.52);
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.input-search {
+  background: #7bd977;
+  border-radius: 8px;
+  margin-right: 13px;
+  height: 32px;
+  width: 325px;
+  border: none;
+  padding-left: 5px;
+}
+
+.btn-search {
+  background: #46ee40;
+  border-radius: 8px;
+  border: solid black;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  height: 40px;
+  width: 80px;
+  margin-right: 3px;
+}
+
+
+
+.line {
+  border: 1px solid #d9d9d9;
+  background-color: #d9d9d9;
+  width: 330px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-add {
+  margin-right: 12px;
+  background-color: rgb(24, 201, 18);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 19px;
+  margin-right: 18px;
+  border: solid black;
+}
+
+.btn-add:hover {
+  background-color: rgb(3, 114, 8);
+}
+
+.found-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+
+.btn-add-text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.movies::-webkit-scrollbar {
+  display: none;
+}

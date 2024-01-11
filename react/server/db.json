@@ -1,0 +1,112 @@
+{
+  "genres": [
+    "Comedy",
+    "Fantasy",
+    "Crime",
+    "Drama",
+    "Music",
+    "Adventure",
+    "History",
+    "Thriller",
+    "Animation",
+    "Family",
+    "Mystery",
+    "Biography",
+    "Action",
+    "Film-Noir",
+    "Romance",
+    "Sci-Fi",
+    "War",
+    "Western",
+    "Horror",
+    "Musical",
+    "Sport"
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "title": "test"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Rick and Morty",
+      "year": "2013",
+      "runtime": "24",
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Adventure",
+        "Action"
+      ],
+      "director": "Wesley Archer , Pete Michels , Jacob Hare",
+      "actors": "Syenduk",
+      "plot": "Ya Hritanovich Dima i Ya lublu Rik i Mortu - eto luchshee chto ya videl iz kinematogropfa. Sovetuy vsem k prosmotry. Tam est' ded i vnuk, eshe Summer - eto ne leto, eto the girl, tipo nu, tipa devochka, tipo da, tipo ona tak obshaetsya, est' eshe lox Jerry, ne bud' like Jarry. esli vi eto chitaete i lubite Rik and Morty and proveryaete laby, to postav'te zachet please, no esli ne lubite vse ravno postavte zachet please! Seriya pro ogurchik Rik krutaya!",
+      "posterUrl": "https://rick-i-morty.online/wp-content/uploads/2007/10/Rick_and_Morty_season_4-185x278.png"
+    },
+
+    {
+      "id": 2,
+      "title": "Dark City",
+      "year": "1998",
+      "runtime": "100",
+      "genres": [
+        "Fantasy",
+        "Thriller",
+        "Adventure"
+      ],
+      "director": "Alex Proyas",
+      "actors": "George Liddle , Patrick Tatopoulos , Richard Hobbs",
+      "plot": "A murderer with no memory of his name or past is being pursued by police inspector Frank Basted. His wife Emma is looking for him, strangers are hunting for him, and he is trying to figure out what is happening using scraps of memories.",
+      "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/cfcc9481-8653-4341-99fb-43d65850b6bb/300x450"
+    },
+
+    {
+      "id": 3,
+      "title": "Back to the Future",
+      "year": "1985",
+      "runtime": "116",
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Comedy"
+      ],
+      "director": "Robert Zemeckis",
+      "actors": "Lawrence J. Poll , Todd Hallowell , Deborah Lynn Scott",
+      "plot": "Teenager Marty, with the help of a time machine built by his friend, professor Doc Brown, finds himself from the 80s to the distant 50s. There he meets his future parents, still teenagers, and a professor friend, very young.",
+      "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/73cf2ed0-fd52-47a2-9e26-74104360786a/300x450"
+    },
+
+    {
+      "id": 4,
+      "title": "Tenet",
+      "year": "2020",
+      "runtime": "150",
+      "genres": [
+        "Fantasy",
+        "Thriller",
+        "Action"
+      ],
+      "director": "Christopher Nolan",
+      "actors": "Nathan Crowley , Toby Britton , Rory Bruen",
+      "plot": "After a terrorist attack at the Kiev Opera House, a CIA agent teams up with British intelligence to confront a Russian oligarch who made his fortune in the arms trade. To do this, agents use time inversion - a future technology that allows time to go backwards.",
+      "posterUrl": "https://www.kinopoisk.ru/2CI9q8354/d1d6b6On1Jgg/jZ8ud8zwErEwExhsU1tErJB9MA5QEq1YsvSaPvETkQqDEoIehMjLQSNSntSuiQunf1oWojfQolfclqZyQwBcAMz_C4bodVf00YedefN-NU0FyORvtJfJGWPBT4sD4JOJoYWgfXZKyYc3Ztqle1yeU35_02YSUVMji7BXNWI2GRG_vH5GeZDgUHWBuAxBK0Yq8r1DewKRvb7ShXpc0AFDy8CmYh02OTl3xUTJ8fsfbFHP_wKGIhXzM9oTUFZT5MkA_l3MZshg8bElgyjf05hWaqHeMQsiAY180vRKvNCRsUogNwLP1Lg4tQU1mMG7vE8y3T5yhzO3QJAbweNVoTYIYPwcbdW4MKGgN7GKT-PqNWlT7_EqcsOcbJDVOf5gM9NKkXSDDdfb-maHRevw2f89kA3f8udANaJBmAPBFEB2edDeLh3E2iCT0xez2RzD65d7Yb-y6JJybTzwxvicgsLwqtE0gK9Wi6snVST4wcl-nqCu3zCHEMaBIElS88VjFppgHC68Z_kDQLEEoMgfwWvn-iLsM_iRQZy98reb7aKQQ4rA91CsFgv5x2RXyfGrTN2xPQ5yVACG0IN5YYAEYnXYYu6P7DVpQoOipZJInRMrpKihDCM7w1PdDREEeJ7iYuKb8CVCr_Tp-edmVtqTum8_g_4-YbXRh4LiGQEh1gMHqYMcv-20ywPDwreiKl-D6oRoY_0Q2kNT7JxRNDm-QyPBe1C1QZ02qYiFpZS6UTtPXgM_PlHn8MVi0ujTQhfjVLsAz9-fl9rS0EFXsCl8E3k1C1OOY_qzMH28M9QbT2Dx0jiA5nOc9HopVKbFSYPZbH6hD01C5WN0syAa41HUMUZZkD58PzbLMBKAN8Iq7YPbZrsw7bF5sBFufID2-m8y0GLZYObwbhd5-aS3lflS-J7t4N7dQYaztoEB2pEx9lMWCmAe77_UWiJCE3RgemzSKlZL0A8xmJKSrrxQ56l8oyOhe0NX0j70Ginnx0fJU1jtTlEvDHL2IpczcOpTY_UjRroCDv3vl1ky4NFkgej_8ah3akH-E3jwMj0u80dYvFCTAzow9XPO5ZvIdzYkK5AZPY3hnT1xdVHlYIHK8QJWI7RrAK4-LGaJc0Cwp4C6_FB7ZTjh_MGrwMDMXJFXK34yAcGq0uUB70aKOSTUZTujyV1vwK7tcZYQpOECijEidgMGa3Atv62Ui1FCszaDCCxT2mXbAT-BCiFB376w1CrOMRBzi9M0I76WS_hXtDXKUQusHNPO7nPV8BawI9qhs3ZwVpuxvgw_FArz4_LEQ6nc4dg1-0AN4Vsjw12O8yT5XLER0XsBBMEuBOoKhYd16yKaf53R7S5ytEDVABNKU1IkUEYZEa_djjbZQgOBFjMp_CHIBRiA7nEoEnLO_tFXeA0gcvG5ozXAH9aYClVmlCuiuz5PE558QcURdwBgGcGCZEAEKVOMP73GKOFSQzRh6z5iGWSowHwAGPCTn2yQlGitAgMRWdDXw_4miBuFlFY4wSjdHPNNnaG1oraQ0Fsj8HRxBwni38xcJOhAguB1Ugovsdv2GAHPwWkAM76d4wUpvPFBkBgwB_BdZdqqBTbFGNGovsyjL64hRVL3wFOLMRIH8ZXIEf6frNYpUAOShZGIviModWjjnxA78WOdflJUKcyAgmDZY0XCPvX7KpeXdUnhu04vI6w_gKSg9VMD-eGSpTM2KFEenJ8GaiIRcFWCqV0iCAQqENxh6tDwnE3yxyqfQSISiDDksZ7FSAnVZ2cbMdqszqIM3zD2EnaDIZrDQrZzZMvSb79P17hDs_KnwPtv0FnmqLE_cuuDAk2NwybazGKh0Wox9KOvNpgohYQnG5FJ3zyS_Y5hdhKV0BG68dAF4Lcach49HcXZMDJDJiGq_NALl_kj3uGb8kPsj3L2OI6iIkFK85Tx_HXJ--cm92mTKb6Ogt1tkwcDZ3Lh2rPANXK1GXL9je5E6qBxgOfg2MxBumWp495SGnAir3zS5NpdcIHhOYPXYd13mNh2hpcYUMieH-EPjTEHQXSjgmkTQDWRV_nCD58fZlrSgINmU9sN4Dlku_MM8Njygt1eUgbYLXOTwIlRlAGfFmr6JnU3C2EqTi_R3f1D1FBn0XBY8oF18eWJENzvfmSLEkIARWP7LlApZzgRj7PaQtBcXgFGydxRs6P7YcainPdIKfWG1JnDGk7dIB2PobXzxUEgitAz5bKFuQE9rc5EyXLR0jdyW0wSOIQYI4zCa-IgTp0BFTtfcZDwyWH3wh5mGcuF5vT4kyj-T4E9T3C3ssTgk3rS4WRQZAoz712N5ktSo3LEUGqtEXglyvBec1rCIE69AueIHFNiASlTx2P_xEo7h5T3eMDJrSygvl5RJiOUEZBp4vGWU4e7YewNHNZLsJGxJYCq7FCZJDnyjdHIsVLtfPNG6j6xg1O743YQzKYpOiZG55kjq5yeQp4P4JSDhTLzm8ADx9E2KeH8fZ01qqJz8zfj-UxCaiQ6480hGmPwfWxDJ2tewuIzyfHmsN5liBqXNgW7UWk9PcHuPiEWgGWjUbvS8wXjBNkC_n0eFGmCQ3J2AFnsQ5kmaoC8wZjxA8yeMvaLfKMy8NvBx2Ot1KhJVHbWOQLJDs-yHV5ShINlIMLqYpFVgnbLIg3OHHaK4UAzFFHKLCJ79GhQXcDrgXF9fJNVSj1gYYE5EfdCP1fI25UEdInBek78M1_PwFRAl8AjisEABbMUyGJ-vp0361IQchbQ21-Si8fY0z1ByhDiD0zgpShuwFJA65F0496m6_n0R0XpsBlsjZHuH8L30nbCgXihIXbQVPvgjBw8FoqiUIBHYurNo5p2GzK-ckkzYd-PwXRqLUKBoIkBxoIeFUj5xzV3aODZDNxzXB2DZwPXMaBKwIAEAiYqcFw9r6SpQoCRRNAov8K6ZgjwrODYk_CMTQF1C47Rg7HLI1dy7jQai_SFhrkCqL2d0b8P4nYwdjIw8"
+    },
+    {
+      "id": 5,
+      "title": "Inception",
+      "year": "2010",
+      "runtime": "148",
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Comedy"
+      ],
+      "director": "Robert Zemeckis",
+      "actors": "Guy Diaz , Luke Freeborn , Matthew Gray",
+      "plot": "Cobb is a talented thief, the best of the best in the dangerous art of extraction: he steals valuable secrets from the depths of the subconscious during sleep, when the human mind is most vulnerable. Cobb's rare abilities have made him a valuable player in the treacherous world of industrial espionage, but they have also turned him into a perennial fugitive and robbed him of everything he has ever loved. And now Cobb has a chance to right the wrongs. His latest case can bring everything back, but for this he needs to accomplish the impossible - initiation. Instead of the perfect theft, Cobb and his team of specialists will have to pull off the opposite. Now their task is not to steal the idea, but to implement it. If they succeed, it will be the perfect crime. But no amount of planning or skill can prepare the team to face a dangerous enemy who seems to predict their every move. An enemy that only Cobb could see.",
+      "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/8ab9a119-dd74-44f0-baec-0629797483d7/300x450"
+    }
+  ]
+}
