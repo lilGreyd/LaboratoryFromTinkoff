@@ -1,0 +1,84 @@
+@import "./normalize.css";
+@import './modal.css';
+
+body{
+    background-color: #eaf5fc;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    margin: 0;
+    padding: 0;
+}
+
+.header__info{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(224, 216, 216, 0.315);
+    box-shadow: 3px 26px 19px -19px #000000;
+}
+.posts__container{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 700px;
+} 
+.posts__content{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: rgb(110, 207, 186);
+    max-height: 500px;
+    width: 700px;
+}
+.username{
+    width: 100px;
+    height: 150px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 2px;
+    margin-right: 10px;
+    
+}
+.username h3{
+    padding-top: 25px;
+}
+.info{
+   width:500px;
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   margin-right: 15px;
+
+}
+.title{
+    align-self: center;
+    width: 100%;
+    border-style: solid;
+    border-radius:2px
+}
+button{
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #17175e;
+    margin: 10px;
+    color: #fff;
+    border-radius: 3px;
+}
+.edit-button{
+    align-self: center;
+}
+.delete-button{
+    align-self: center;
+    margin-right: 5px;
+}
+.add-button-container{
+    width: 100%;
+    
+}
+.add-button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+

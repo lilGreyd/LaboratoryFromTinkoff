@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostList application</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header>
+        <div class ='header__info'>
+            <h1>Web-application for your posts!</h1>
+        </div>
+    </header>
+    <main>
+        <div class="add-button-container">
+            <button type="button" class="add-button">ADD POST</button>
+        </div>
+        <div class="posts__container">
+
+        </div>
+        <section class="edit-modal visually-hidden">
+            <form class="modal-form">
+                <h3>Окно редактирования</h3>
+                <label for="UserId">UserId:</label>
+                <input type="text" name="userid">
+                <label for="title">Title:</label>
+                <input type="text" name="title">
+                <label for="body">Body:</label>
+                <input type="text" name="body">
+                <button type="button" class="on-edit-button">EDIT</button>
+                <div class="form-errors"></div>
+                <div class="close edit-close"></div>
+            </form>
+        </section>
+        <section class="add-modal visually-hidden">
+            <form class="modal-form">
+                <h3>Окно добавления</h3>
+                <label for="Userid">UserId:</label>
+                <input type="text" name="userid">
+                <label for="title">Title:</label>
+                <input type="text" name="title">
+                <label for="body">Body:</label>
+                <input type="text" name="body">
+                <button type="button" class="submit-btn">OK</button>
+                <div class="form-errors"></div>
+                <div class="close add-close"></div>
+            </form>
+        </section>
+    </main>
+    <script type="module" src = "./index.js"></script>
+</body>
+</html>
