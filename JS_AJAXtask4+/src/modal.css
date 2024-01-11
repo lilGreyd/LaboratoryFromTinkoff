@@ -1,0 +1,68 @@
+.edit-modal{
+    position: fixed;
+    left: 35%;
+    right: 65%;
+    top:30%;
+}
+.add-modal{
+    position: fixed;
+    left: 35%;
+    right: 65%;
+    top:30%;
+}
+.modal-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgb(102, 154, 201);
+    align-items: center;
+    z-index: 2;
+}
+h3{
+    text-align: center;
+}
+input{
+    width: 350px;
+}
+.close{
+    position: absolute;
+    top: 20px;
+	right: 20px;
+	width: 24px;
+	height: 24px;
+    cursor: pointer;
+}
+.close::after,
+.close::before{
+    content: '';
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 24px;
+	height: 3px;
+	background-color:red;
+}
+.close::before{
+    transform: rotate(45deg);
+}
+.close::after{
+    transform: rotate(-45deg);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+
+  .form-errors{
+    color: red;
+    font-size: 14px;
+  }
