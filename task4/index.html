@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Test page</title>
+</head>
+<body>
+<header>
+    <div class="header_flex">
+
+        <div>
+            Хританович Дима 6407
+        </div>
+
+        <div>
+            <button>Засетапить начальные значения</button>
+        </div>
+
+
+    </div>
+</header>
+
+<div class="container">
+    <div class="left-block">
+        <!-- Содержимое левого блока -->
+        <div class="form_title">Форма добавления карточки товара</div>
+
+        <form name="myForm">
+        <div class="form_flex">
+            <input class="input_elem_1" id="name" type="text" name="input1" placeholder="Название" />
+            <input class="input_elem_1" id = "link" type="text" name="input2" placeholder="Ссылка на изображение" />
+            <textarea class="textarea_elem" id="description" type="text" name="input3" placeholder="Описание"></textarea>
+            <input class="input_elem_1" id="code" type="number" name="input4" placeholder="Код товара" />
+            <input class="input_elem_1" id="provider" type="text" name="input4" placeholder="Поставщик" />
+            <button id="addButton" class="form_button">Кнопка</button>
+        </div>
+        </form>
+    </div>
+    <div class="divider"></div>
+    <div class="right-block">
+        <!-- Содержимое правого блока -->
+        <div class="form_title">Витрина карточек</div>
+        <div id="goods" class="form_flex">
+
+
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+
+    let flag = true;
+
+    document.getElementById('addButton').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var nameElem = document.forms["myForm"]["name"];
+        let name = nameElem.value;
+        nameElem.value = "";
+
+        var linkElem = document.forms["myForm"]["link"];
+        let link = linkElem.value;
+        linkElem.value = "";
+
+        var codeElem = document.forms["myForm"]["code"];
+        let code = codeElem.value;
+        codeElem.value = "";
+
+        var providerElem = document.forms["myForm"]["provider"];
+        let provider = providerElem.value;
+        providerElem.value = "";
+
+        var descriptionElem = document.forms["myForm"]["description"];
+        let description = descriptionElem.value;
+        descriptionElem.value = "";
+
+        if (name == "" || link == "" || code == "" || provider == "" ) {
+            alert("All fields must be filled out");
+            return 0;
+        }
+
+        let object_goods = {
+            name : name,
+            link : link,
+            provider : provider,
+            description : description
+        }
+
+        let goods = JSON.stringify(object_goods);
+        localStorage.setItem(code, goods);
+        let element = document.getElementById("goods");
+
+        if(flag) {
+            let fragmentGoods = document.createDocumentFragment();
+
+            let div1 = document.createElement("div");
+            div1.classList.add("goods_elem");
+            let div2 = document.createElement("div");
+            div2.classList.add("goods_flex");
+
+            let div_child1 = document.createElement("div");
+            div_child1.classList.add("goods_flex_item")
+
+            let div_child2 = document.createElement("div");
+            div_child2.classList.add("goods_flex_item")
+
+            let span_id = document.createElement("span");
+            span_id.textContent = code;
+
+            let img = document.createElement("div");
+            img.classList.add("goods_img")
+
+            let div_description = document.createElement("div");
+            div_description.textContent = description;
+            div_description.classList.add("description");
+            div_description.id = "description";
+
+            let span_name = document.createElement("span");
+            span_name.textContent = name;
+            span_name.classList.add("name");
+            span_name.id = "name";
+
+            let button_edit = document.createElement("button");
+            button_edit.classList.add("goods_margin");
+            button_edit.textContent = "Edit";
+            button_edit.id = "edit"
+
+            let button_delete = document.createElement("button");
+            button_delete.classList.add("goods_margin");
+            button_delete.textContent = "Delete";
+            button_delete.id = "delete"
+
+            div_child1.appendChild(span_id);
+            div_child1.appendChild(img);
+            div_child1.appendChild(div_description);
+            div_child2.appendChild(span_name);
+            div_child2.appendChild(button_edit);
+            div_child2.appendChild(button_delete);
+
+            div2.appendChild(div_child1);
+            div2.appendChild(div_child2);
+            div1.appendChild(div2);
+            div1.id = code;
+
+            fragmentGoods.appendChild(div1);
+            element.appendChild(fragmentGoods);
+        }
+        else {
+            document.forms["myForm"]["code"].disabled = false;
+            let goodsElem = element.querySelector("#\\3"+code.charAt(0)+" "+code.slice(1));
+            let goodsName = goodsElem.querySelector("#name");
+            let goodsDescription = goodsElem.querySelector("#description")
+            goodsDescription.textContent = description;
+            goodsName.textContent = name;
+            flag = true;
+        }
+    }
+    );
+
+
+    document.getElementById("goods").addEventListener('click', function(event) {
+            event.preventDefault();
+
+        let element = event.target.parentElement.parentElement.parentElement;
+
+
+        if(event.target.id === "delete") {
+            localStorage.removeItem(element.id);
+            element.remove();
+        }
+        else {
+            let goods = JSON.parse(localStorage.getItem(element.id));
+
+            console.log(goods);
+            var name = document.forms["myForm"]["name"];
+            name.value = goods.name;
+            var link = document.forms["myForm"]["link"];
+            link.value = goods.link;
+            var code = document.forms["myForm"]["code"];
+            code.value = element.id;
+            var provider = document.forms["myForm"]["provider"];
+            provider.value = goods.provider;
+            var description = document.forms["myForm"]["description"];
+            description.value = goods.description;
+            flag = false;
+            code.disabled = true;
+        }
+        }
+    );
+
+
+    window.addEventListener('load', () => {
+        if (localStorage.length > 0) {
+            // Получаем все ключи из localStorage
+            var keys = Object.keys(localStorage);
+            let element = document.getElementById("goods");
+            keys.forEach(function(key) {
+
+                let goods = JSON.parse(localStorage.getItem(key));
+
+                let fragmentGoods = document.createDocumentFragment();
+
+                let div1 = document.createElement("div");
+                div1.classList.add("goods_elem");
+                let div2 = document.createElement("div");
+                div2.classList.add("goods_flex");
+
+                let div_child1 = document.createElement("div");
+                div_child1.classList.add("goods_flex_item")
+
+                let div_child2 = document.createElement("div");
+                div_child2.classList.add("goods_flex_item")
+
+                let span_id = document.createElement("span");
+                span_id.textContent = key;
+
+                let img = document.createElement("div");
+                img.classList.add("goods_img")
+
+                let div_description = document.createElement("div");
+                div_description.textContent = goods.description;
+                div_description.classList.add("description");
+                div_description.id = "description";
+
+                let span_name = document.createElement("span");
+                span_name.textContent = goods.name;
+                span_name.classList.add("name");
+                span_name.id = "name";
+
+                let button_edit = document.createElement("button");
+                button_edit.classList.add("goods_margin");
+                button_edit.textContent = "Edit";
+                button_edit.id = "edit"
+
+                let button_delete = document.createElement("button");
+                button_delete.classList.add("goods_margin");
+                button_delete.textContent = "Delete";
+                button_delete.id = "delete"
+
+                div_child1.appendChild(span_id);
+                div_child1.appendChild(img);
+                div_child1.appendChild(div_description);
+                div_child2.appendChild(span_name);
+                div_child2.appendChild(button_edit);
+                div_child2.appendChild(button_delete);
+
+                div2.appendChild(div_child1);
+                div2.appendChild(div_child2);
+                div1.appendChild(div2);
+                div1.id = key;
+
+                fragmentGoods.appendChild(div1);
+                element.appendChild(fragmentGoods);
+            });
+        }
+
+    });
+
+
+
+
+</script>
